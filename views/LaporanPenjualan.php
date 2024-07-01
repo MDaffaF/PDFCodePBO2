@@ -110,12 +110,23 @@ include "../koneksi/koneksi.php";
             </table>
         </div>
     </div>
+    <div class="row mt-5">
+        <div class="col-md-12 text-right">
+            <p>Bandung, <span id="currentDate"></span></p>
+            <p><br><br><br></p>
+            <p>Pegawai</p>
+        </div>
 </div>
 
 <script>
     function printPage() {
         window.print();
     }
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('currentDate').textContent = currentDate.toLocaleDateString('id-ID', options)
+    });
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
