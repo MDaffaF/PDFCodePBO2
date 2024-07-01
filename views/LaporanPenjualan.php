@@ -79,7 +79,7 @@ include "../koneksi/koneksi.php";
                 if (isset($_POST['cek']) && !empty($_POST['dari']) && !empty($_POST['sampai'])) {
                     $dari = $_POST['dari'];
                     $sampai = $_POST['sampai'];
-                    $where = "WHERE tanggal_masuk BETWEEN '$dari' AND '$sampai'";
+                    $where = "WHERE tgl BETWEEN '$dari' AND '$sampai'";
                 }
 
                 $sql = "SELECT * FROM tbl_penjualan $where";
