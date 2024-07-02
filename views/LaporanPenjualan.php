@@ -114,7 +114,7 @@ include "../koneksi/koneksi.php";
         <div class="col-md-12 text-right">
             <p>Bandung, <span id="currentDate"></span></p>
             <p><br><br><br></p>
-            <p>Pegawai</p>
+            <p>Daffa</p>
         </div>
 </div>
 
